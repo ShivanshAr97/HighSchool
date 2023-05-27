@@ -19,7 +19,7 @@ import Fourth from './Fourth';
 const NotesMain = () => {
     const productList = [{
         id: 1,
-        class: 10,
+        classs: 10,
         subject: "English",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -27,7 +27,7 @@ const NotesMain = () => {
     },
     {
         id: 2,
-        class: 10,
+        classs: 10,
         subject: "Math",
         likes: 2,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -35,7 +35,7 @@ const NotesMain = () => {
     },
     {
         id: 3,
-        class: 10,
+        classs: 10,
         subject: "Science",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -43,7 +43,7 @@ const NotesMain = () => {
     },
     {
         id: 4,
-        class: 11,
+        classs: 11,
         subject: "English",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -51,7 +51,7 @@ const NotesMain = () => {
     },
     {
         id: 5,
-        class: 11,
+        classs: 11,
         subject: "Math",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -59,7 +59,7 @@ const NotesMain = () => {
     },
     {
         id: 6,
-        class: 11,
+        classs: 11,
         subject: "Phy",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -67,7 +67,7 @@ const NotesMain = () => {
     },
     {
         id: 7,
-        class: 11,
+        classs: 11,
         subject: "Chem",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -75,7 +75,7 @@ const NotesMain = () => {
     },
     {
         id: 8,
-        class: 12,
+        classs: 12,
         subject: "English",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -83,7 +83,7 @@ const NotesMain = () => {
     },
     {
         id: 9,
-        class: 12,
+        classs: 12,
         subject: "Math",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -91,7 +91,7 @@ const NotesMain = () => {
     },
     {
         id: 10,
-        class: 12,
+        classs: 12,
         subject: "Phy",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -99,7 +99,7 @@ const NotesMain = () => {
     },
     {
         id: 11,
-        class: 12,
+        classs: 12,
         subject: "Chem",
         likes: 20,
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
@@ -118,7 +118,7 @@ const NotesMain = () => {
         if (searchVal === "") { setProducts(productList); return; }
         
         const filterBySearch = productList.filter((item) => {
-            if (item.subject.toLowerCase().toString() .includes (searchVal.toLowerCase())) { return item; }
+            if ((item.subject.toLowerCase().toString() .includes (searchVal.toLowerCase()))|| (item.classs.toString() .includes (searchVal.toString())) ){ return item; }
         })
         setProducts(filterBySearch);
     }
@@ -137,7 +137,7 @@ const NotesMain = () => {
                             <div className='flex mx-auto w-[50%] border my-4'>
                                 <div>
                                     <img className='w-[24rem] mx-auto' src={product.img} alt="" />
-                                    <h1>{product.subject}: {product.class}</h1>
+                                    <h1>{product.subject}: {product.classs}</h1>
                                     <span>{product.likes}</span>
                                     <p>{product.desc}</p>
                                 </div>
