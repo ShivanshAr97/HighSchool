@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Opportunities = () => {
     return (
-        <div className='px-12 py-8 text-lg flex'>
+        <div className='px-12 py-8 text-lg flex shadow'>
             <div className='w-[30%] px-10'>
                 <img className='h-60 object-cover rounded-lg' src="https://images.pexels.com/photos/5668857/pexels-photo-5668857.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
             </div>
