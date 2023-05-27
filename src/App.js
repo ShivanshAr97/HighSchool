@@ -1,28 +1,31 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Main from './components/Main';
-import Notes from './components/Notes';
-import Lectures from './components/Lectures';
-import Discussions from './components/Discussions';
-import Opportunities from './components/Opportunities';
-import Footer from './Footer';
+import NotesMain from './components/NotesMain';
+import LecturesMain from './components/LecturesMain';
+import DiscussionsMain from './components/DiscussionsMain';
+import OpportunitiesMain from './components/OpportunitiesMain';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Navbar />
-      
-      <Main />
+      <Routes>
+        <Route exact path='/' element={<Main />} />
 
-      <Notes heading="Incomplete Notes?" content="Read from the best in field notes written by the top scorers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem possimus molestias minima facilis ratione, quod, commodi labore assumenda, harum iusto saepe sed corrupti quibusdam quas provident optio suscipit quo! Similique aperiam ut corrupti accusantium, deleniti dolore libero. Accusantium, sapiente." button="View Notes" />
+        <Route exact path='/notes' element={<NotesMain />} />
 
-      <Lectures heading="Need to Study a topic or Revise the Syllabus?" content="Read from the best in field notes written by the top scorers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem possimus molestias minima facilis ratione, quod, commodi labore assumenda, harum iusto saepe sed corrupti quibusdam quas provident optio suscipit quo! Similique aperiam ut corrupti accusantium, deleniti dolore libero. Accusantium, sapiente." button="Browse  Playlists" />
+        <Route exact path='/lectures' element={<LecturesMain />} />
 
-      <Discussions heading="Discuss doubts" content="Read from the best in field notes written by the top scorers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem possimus molestias minima facilis ratione, quod, commodi labore assumenda, harum iusto saepe sed corrupti quibusdam quas provident optio suscipit quo! Similique aperiam ut corrupti accusantium, deleniti dolore libero. Accusantium, sapiente." button="Begin Discussions" />
+        <Route exact path='/discussions' element={<DiscussionsMain />} />
 
-      <Opportunities heading="Get Amazing Opportunities" content="Read from the best in field notes written by the top scorers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem possimus molestias minima facilis ratione, quod, commodi labore assumenda, harum iusto saepe sed corrupti quibusdam quas provident optio suscipit quo! Similique aperiam ut corrupti accusantium, deleniti dolore libero. Accusantium, sapiente." button="View Opportunities" />
+        <Route exact path='/opportunities' element={<OpportunitiesMain />} />
+      </Routes>
+      <Footer />
 
-      <Footer/>
     </>
   );
 }
