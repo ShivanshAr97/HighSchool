@@ -11,10 +11,10 @@ import { useState } from 'react';
 // import Class12Phy from './Class12Phy';
 // import Class12Math from './Class12Math';
 // import Class12Chem from './Class12Chem';
-import First from './First';
-import Second from './Second';
-import Third from './Third';
-import Fourth from './Fourth';
+// import First from './First';
+// import Second from './Second';
+// import Third from './Third';
+// import Fourth from './Fourth';
 
 const NotesMain = () => {
     const productList = [{

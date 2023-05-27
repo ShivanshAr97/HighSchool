@@ -7,18 +7,6 @@ import { Link } from 'react-router-dom';
 
 const OpportunitiesMain = () => {
   const { isAuthenticated } = useAuth0();
-  const submitted = () => {
-    alert("The opportunity will be reviewed by the admins and then posted here")
-  }
-  const plus = () => {
-    {
-      isAuthenticated ? (
-        <>
-
-        </>
-      ) : alert("You need to login before adding an opportunity")
-    }
-  }
 
   return (
     <div className='flex'>
@@ -38,7 +26,7 @@ const OpportunitiesMain = () => {
             <span className='text-sm'>100 applicants</span>
           </div>
           <p>The candidate will be trained on the chosen technology for the first month of the internship. In the second month projects will be assigned. The training provided during the internship will be project oriented training.</p>
-          <a href="https://www.linkedin.com/jobs/view/3613647847/" target='_blank'><button className='bg-blue-400 px-4 py-1 my-2 rounded-lg text-white font-medium mb-6'>Apply now</button></a>
+          <a href="https://www.linkedin.com/jobs/view/3613647847/" target='_blank' rel='noreferrer'><button className='bg-blue-400 px-4 py-1 my-2 rounded-lg text-white font-medium mb-6'>Apply now</button></a>
         </div>
 
         <div>

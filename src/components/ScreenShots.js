@@ -24,8 +24,8 @@ function ScreenShots() {
     return (
         <div>
             <button onClick={downloadScreenshot}>Download screenshot</button>
-            <div className="border ">
-                <span className="border"><ReactCanvasPaint /></span>
+            <div ref={ref} className="border ">
+                <ReactCanvasPaint width={1250} colors={['#7030A2', '#000000', '#0170C1', '#FE0002', '#FFFF01', '#ffffff']}/>
             </div>
         </div>
     );
