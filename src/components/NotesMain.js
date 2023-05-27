@@ -105,10 +105,10 @@ const NotesMain = () => {
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/768x180/?atoms"
     },
-    <First />,
-    <Second />,
-    <Third />,
-    <Fourth />
+    // <First />,
+    // <Second />,
+    // <Third />,
+    // <Fourth />
 
     ];
 
@@ -116,9 +116,9 @@ const NotesMain = () => {
     const [searchVal, setSearchVal] = useState("");
     function handleSearchClick() {
         if (searchVal === "") { setProducts(productList); return; }
+        
         const filterBySearch = productList.filter((item) => {
-            if (item.toLowerCase()
-                .includes(searchVal.toLowerCase())) { return item; }
+            if (item.subject.toLowerCase().toString() .includes (searchVal.toLowerCase())) { return item; }
         })
         setProducts(filterBySearch);
     }
@@ -134,9 +134,9 @@ const NotesMain = () => {
                 {products.map((product) => {
                     return (
                         <div className='' key={product.id}>
-                            <div className='grid grid-cols-4 gap-4 border'>
-                                <div className=''>
-                                    <img src={product.img} alt="" />
+                            <div className='flex mx-auto w-[50%] border my-4'>
+                                <div>
+                                    <img className='w-[24rem] mx-auto' src={product.img} alt="" />
                                     <h1>{product.subject}: {product.class}</h1>
                                     <span>{product.likes}</span>
                                     <p>{product.desc}</p>

@@ -1,19 +1,34 @@
 import React from 'react'
 import Webinars from './Webinars'
 import Courses from './Courses'
-
+import { useAuth0 } from "@auth0/auth0-react";
 import { AiOutlinePlusCircle } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const OpportunitiesMain = () => {
-  const plus=()=>{
-    alert("You need to login before adding an opportunity")
+  const { isAuthenticated } = useAuth0();
+  const submitted = () => {
+    alert("The opportunity will be reviewed by the admins and then posted here")
   }
+  const plus = () => {
+    {
+      isAuthenticated ? (
+        <>
+
+        </>
+      ) : alert("You need to login before adding an opportunity")
+    }
+  }
+
   return (
     <div className='flex'>
       <div className='w-[60%] mx-12 my-8'>
         <div className='flex items-center justify-between'>
           <p className='text-4xl font-bold mb-4'>Internships</p>
-          <span className='text-blue-500 cursor-pointer' onClick={plus}><AiOutlinePlusCircle size="18px" /></span>
+          {isAuthenticated ?
+            <span className='text-blue-500 cursor-pointer'><Link to='/'><AiOutlinePlusCircle size="18px" /></Link></span>
+            :
+            <span className='text-blue-500 cursor-pointer'></span>}
         </div>
         <div>
           <img className=' object-cover rounded-lg' src="https://source.unsplash.com/random/768x180/?job" alt="crypto" />
@@ -81,16 +96,22 @@ const OpportunitiesMain = () => {
           <a href="https://www.linkedin.com/jobs/view/3617882252/" target='_blank'><button className='bg-blue-400 px-4 py-1 my-2 rounded-lg text-white font-medium mb-6'>Apply now</button></a>
         </div>
       </div>
-      
+
       <div className='w-[35%]'>
         <div className='flex items-center justify-between mx-4 mt-8'>
           <p className='text-4xl font-bold'>Webinars</p>
-          <span className='text-blue-500 cursor-pointer'onClick={plus}><AiOutlinePlusCircle size="18px" /></span>
+          {isAuthenticated ?
+            <span className='text-blue-500 cursor-pointer'><Link to='/'><AiOutlinePlusCircle size="18px" /></Link></span>
+            :
+            <span className='text-blue-500 cursor-pointer'></span>}
         </div>
         <Webinars />
         <div className='flex justify-between items-center mx-4'>
-        <p className='text-4xl font-bold '>Courses</p>
-        <span className='text-blue-500 cursor-pointer'onClick={plus}><AiOutlinePlusCircle size="18px" /></span>
+          <p className='text-4xl font-bold '>Courses</p>
+          {isAuthenticated ?
+            <span className='text-blue-500 cursor-pointer'><Link to='/'><AiOutlinePlusCircle size="18px" /></Link></span>
+            :
+            <span className='text-blue-500 cursor-pointer'></span>}
         </div>
         <Courses />
       </div>
