@@ -14,7 +14,7 @@ const OpportunitiesMain = () => {
         <div className='flex items-center justify-between'>
           <p className='text-4xl font-bold mb-4'>Internships</p>
           {isAuthenticated ?
-            <span className='text-blue-500 cursor-pointer'><Link to='/'><AiOutlinePlusCircle size="18px" /></Link></span>
+            <span className='text-blue-500 cursor-pointer'><Link to='/post'><AiOutlinePlusCircle size="18px" /></Link></span>
             :
             <span className='text-blue-500 cursor-pointer'></span>}
         </div>
@@ -89,7 +89,7 @@ const OpportunitiesMain = () => {
         <div className='flex items-center justify-between mx-4 mt-8'>
           <p className='text-4xl font-bold'>Webinars</p>
           {isAuthenticated ?
-            <span className='text-blue-500 cursor-pointer'><Link to='/'><AiOutlinePlusCircle size="18px" /></Link></span>
+            <span className='text-blue-500 cursor-pointer'><Link to='/post'><AiOutlinePlusCircle size="18px" /></Link></span>
             :
             <span className='text-blue-500 cursor-pointer'></span>}
         </div>
@@ -97,7 +97,7 @@ const OpportunitiesMain = () => {
         <div className='flex justify-between items-center mx-4'>
           <p className='text-4xl font-bold '>Courses</p>
           {isAuthenticated ?
-            <span className='text-blue-500 cursor-pointer'><Link to='/'><AiOutlinePlusCircle size="18px" /></Link></span>
+            <span className='text-blue-500 cursor-pointer'><Link to='/post'><AiOutlinePlusCircle size="18px" /></Link></span>
             :
             <span className='text-blue-500 cursor-pointer'></span>}
         </div>
