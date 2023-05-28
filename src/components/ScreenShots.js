@@ -23,9 +23,10 @@ function ScreenShots() {
 
     return (
         <div>
-            <button onClick={downloadScreenshot}>Download screenshot</button>
+            {/* <button className='text-center border bg-blue-400 text-white border-none font-bold py-1 px-4 rounded-lg flex mx-auto my-1'>Begin Practice</button> */}
+            <button className='text-center border bg-blue-400 text-white border-none font-bold py-1 px-4 rounded-lg flex mx-auto my-2' onClick={downloadScreenshot}>Download screenshot</button>
             <div ref={ref} className="border ">
-                <ReactCanvasPaint width={1250} colors={['#7030A2', '#000000', '#0170C1', '#FE0002', '#FFFF01', '#ffffff']}/>
+                <ReactCanvasPaint width={1250} colors={['black','white', "red", "yellow", "blue", "green"]}/>
             </div>
         </div>
     );

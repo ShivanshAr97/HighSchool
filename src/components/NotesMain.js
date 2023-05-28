@@ -14,7 +14,7 @@ const NotesMain = () => {
         contributor: "Sanya",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?school",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const NotesMain = () => {
         contributor: "Akshay",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?study",
-        linkk:"/math10"
+        linkk: "/math10"
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ const NotesMain = () => {
         contributor: "Vaibhav",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?college",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const NotesMain = () => {
         contributor: "Arsh",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?english",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const NotesMain = () => {
         contributor: "Vidhushi",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?Mathematics",
-        linkk:"/math10"
+        linkk: "/math10"
     },
     {
         id: 6,
@@ -64,7 +64,7 @@ const NotesMain = () => {
         contributor: "Bala",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?Physics",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ const NotesMain = () => {
         contributor: "Pranav",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?chemistry",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 8,
@@ -84,7 +84,7 @@ const NotesMain = () => {
         contributor: "Anuj",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?prepare",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 9,
@@ -94,7 +94,7 @@ const NotesMain = () => {
         contributor: "Anupama",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?addition",
-        linkk:"/math10"
+        linkk: "/math10"
     },
     {
         id: 10,
@@ -104,7 +104,7 @@ const NotesMain = () => {
         contributor: "Anushree",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?cosmos",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 11,
@@ -114,7 +114,7 @@ const NotesMain = () => {
         contributor: "Tina",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?atoms",
-        linkk:"/eng10"
+        linkk: "/eng10"
     },
     {
         id: 12,
@@ -124,7 +124,7 @@ const NotesMain = () => {
         contributor: "Mamta",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?student",
-        linkk:"/first"
+        linkk: "/first"
     },
     {
         id: 13,
@@ -134,7 +134,7 @@ const NotesMain = () => {
         contributor: "Vishnu",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?coding",
-        linkk:"/second"
+        linkk: "/second"
     },
     {
         id: 14,
@@ -144,7 +144,7 @@ const NotesMain = () => {
         contributor: "Dhruv",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?mechanics",
-        linkk:"/third"
+        linkk: "/third"
     },
     {
         id: 15,
@@ -154,7 +154,7 @@ const NotesMain = () => {
         contributor: "Aditya",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error quae architecto, impedit incidunt recusandae vitae rerum porro eveniet atque.",
         img: "https://source.unsplash.com/random/?programming",
-        linkk:"/fourth"
+        linkk: "/fourth"
     }
     ];
     const { isAuthenticated } = useAuth0();
@@ -195,11 +195,12 @@ const NotesMain = () => {
                     return (
                         <div className='' key={product.id}>
                             <div className='flex mx-auto w-[50%] border my-4 mb-8'>
-                                <Link to="/eng10"><div className='mx-4 py-2'>
-                                    <img className='w-[16rem] h-[16rem] object-cover rounded-lg mx-auto' src={product.img} alt="" />
+                                <div className='mx-4 py-2'>
+                                    <Link to="/eng10"><img className='w-[16rem] h-[16rem] object-cover rounded-lg mx-auto' src={product.img} alt="" />
+                                    </Link>
                                     <h1 className='mt-4 mb-2 text-3xl font-medium'>{product.subject} for {product.classs}</h1>
                                     <div className='flex justify-between'>
-                                        <div className='flex items-center cursor-pointer'>
+                                        <div className='flex items-center cursor-pointe z-30'>
 
                                             {isAuthenticated ? (
                                                 <>
@@ -218,7 +219,6 @@ const NotesMain = () => {
                                     </div>
                                     <p className='text-sm mt-2'>{product.desc}</p>
                                 </div>
-                                    </Link>
                             </div>
 
                         </div>
