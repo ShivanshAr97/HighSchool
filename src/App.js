@@ -10,7 +10,7 @@ import PageNotFound from './components/PageNotFound';
 import OpportunitiesMain from './components/OpportunitiesMain';
 import Footer from './components/Footer';
 import ScreenShots from './components/ScreenShots';
-import Post from './Post';
+import Post from './components/Post';
 
 function App() {
   return (

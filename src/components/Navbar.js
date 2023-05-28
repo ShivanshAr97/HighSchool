@@ -21,8 +21,10 @@ const Navbar = () => {
                     <Link to="/opportunities"><li className='mx-4 cursor-pointer'>Oppurtunities</li></Link>
                     {isAuthenticated && <img className='rounded-full w-8 h-8 mr-2' src={user.picture} alt="" />}
                     {isAuthenticated ? (
-                        (<button onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>)
-                    ) : (<button onClick={() => loginWithRedirect()}>Log In</button>)}
+                        (<button className='text-center border bg-blue-400 text-white border-none py-1 px-4 
+                        rounded-lg flex mx-auto my-4' onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>)
+                    ) : (<button className='text-center border bg-blue-400 text-white border-none py-1 px-4 
+                    rounded-lg flex mx-auto my-4' onClick={() => loginWithRedirect()}>Log In</button>)}
                 </ul>
             </div>
 

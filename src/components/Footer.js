@@ -22,10 +22,10 @@ const Footer = () => {
                 </div>
                 <div className='w-1/3 px-8'>
                     <ul className='flex text-center'>
-                        <li className='w-1/4 cursor-pointer text-red-600'><AiFillYoutube size={36}/></li>
-                        <li className='w-1/4 cursor-pointer text-blue-800'><AiFillLinkedin size={36}/></li>
-                        <li className='w-1/4 cursor-pointer text-green-900'><AiFillGithub size={36}/></li>
-                        <li className='w-1/4 cursor-pointer text-blue-500'><AiFillFacebook size={36}/></li>
+                        <li className='w-1/4 cursor-pointer text-red-600'><a href="https://www.linkedin.com/in/shivansharora97/"><AiFillYoutube size={36} /></a></li>
+                        <li className='w-1/4 cursor-pointer text-blue-800'><a href="https://www.linkedin.com/in/shivansharora97/"><AiFillLinkedin size={36} /></a></li>
+                        <li className='w-1/4 cursor-pointer text-green-900'><a href="https://github.com/ShivanshAr97"><AiFillGithub size={36} /></a></li>
+                        <li className='w-1/4 cursor-pointer text-blue-500'><a href="https://github.com/ShivanshAr97"><AiFillFacebook size={36} /></a></li>
                     </ul>
                 </div>
             </div>
